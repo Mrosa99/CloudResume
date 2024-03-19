@@ -8,7 +8,8 @@
     margin: 0;
   }
   .side-navbar {
-    background: #D7E8D4;
+    display: none;
+    background: #333;
     flex: 1;
   }
   .col-2 {
@@ -24,12 +25,20 @@
     flex: 4;
     min-height: 60vh;
   }
-  header, footer {
-    background: yellowgreen;
-    height: 20vh;
+  header{
+    top: 0;
+    position: sticky;
+    position: -webkit-sticky;
+    background-color: #333;
+    height: 10vh;
   }
   header, footer, article, nav {
     padding: 1em;
+  }
+  .btn{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
   }
 
   hr{
