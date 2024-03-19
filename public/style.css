@@ -18,7 +18,7 @@
   }
   .main-content {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
   .main-content > article {
     flex: 4;
@@ -30,6 +30,29 @@
   }
   header, footer, article, nav {
     padding: 1em;
+  }
+
+  hr{
+    width: 100%;
+  }
+  .main-content-one{
+
+  }
+  
+  .main-content-two{
+
+  }
+
+  .main-content-three{
+
+  }
+
+  .main-content-four{
+
+  }
+
+  .main-content-five{
+    
   }
 /*.container {
   display: flex;
