@@ -7,15 +7,13 @@ div {
   display: block;
 }
 
-.page {
+.page {}
 
-}
-
-.nav{
-height: 65px;
-position: fixed;
-background-color: #141414;
-z-index: 1;
+.nav {
+  height: 65px;
+  position: fixed;
+  background-color: #121212;
+  z-index: 1;
 }
 
 .nav-container {
@@ -24,37 +22,54 @@ z-index: 1;
   justify-content: space-between;
 }
 
-.nav, .nav-container {
-width: 100%;
-display: flex;
-align-items: center;
+.nav,
+.nav-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 
-.nav-links{
-display: flex;
-align-items: center;
-justify-content: flex-end;
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
-.btn{
+.btn {
   color: white;
   text-decoration: none;
   margin: 10px;
 }
 
-.intro {
-display: flex;
-align-items: center;
-justify-content: center;
-height: 100vh;
-padding-top: 65px;
-background-color: #141414;
+.overview {
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  padding-top: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #141414;
+
 }
 
-.container{
+.container {
 
 }
+
 .main-content {
+  display: inline-block;
+  width: 100%;
+  background-color: grey;
+  position: relative;
+  margin-top: calc(100vh + 65px);
 
 }
 
+.about {
+  padding: 1000px;
+  position: relative;
+  width: 100%;
+  background-color: red;
+}
