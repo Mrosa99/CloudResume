@@ -1,17 +1,18 @@
 body {
   margin: 0;
+  color: white;
 }
 
 div {
   display: block;
 }
 
-.container {
+.page {
 
 }
 
 .nav{
-height: 64px;
+height: 65px;
 position: fixed;
 background-color: #141414;
 z-index: 1;
@@ -42,9 +43,17 @@ justify-content: flex-end;
 }
 
 .intro {
-
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100vh;
+padding-top: 65px;
+background-color: #141414;
 }
 
+.container{
+
+}
 .main-content {
 
 }
