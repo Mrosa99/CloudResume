@@ -54,10 +54,10 @@ div {
 }
 
 .container {
-margin:0 auto;
-width: 980px;
-padding-left: 16px;
-padding-right: 16px;
+  margin: 0 auto;
+  width: 980px;
+  padding-left: 16px;
+  padding-right: 16px;
 
 }
 
@@ -70,40 +70,43 @@ padding-right: 16px;
 
 }
 
-.self {
+.about {
   padding: 50px 0;
   position: relative;
   width: 100%;
-  background-color: #272626;
+  background-color: #2b2b2b;
 }
 
-.about-content{
+.about-content {
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
 
-.intro{
+.intro {
   padding: 100px;
 }
 
-.about{
-  background-color: #2b2b2b;
-  padding: 50px;
-  position: relative;
-}
-
-.skills{
+.skills {
   background-color: #272626;
-  padding: 50px;
+  width: 100%;
+  padding: 50px 0;
   position: relative;
 }
 
-.certifications{
-  background-color: #2b2b2b;
-  padding: 50px;
+.skills-content {
+  padding: 100px;
+}
+
+.certifications {
+  padding: 50px 0;
   position: relative;
+  width: 100%;
+  background-color: #2b2b2b;
+}
+
+.certifications-content {
+  padding: 100px;
 }
 
 .projects {
@@ -112,8 +115,20 @@ padding-right: 16px;
   position: relative;
 }
 
-.contact{
+.projects-content {
+  padding: 100px;
+}
+
+.contact {
   background-color: #121212;
   padding: 50px;
   position: relative;
+}
+
+.contact-content {
+  padding: 100px;
+}
+
+#LN{
+  color : #3C6142;
 }
