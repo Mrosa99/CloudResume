@@ -9,6 +9,9 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
+    <script type="text/javascript">
+      window.global = window;
+    </script>
     <script src="/public/jquery-3.7.1.min.js"></script>
     <link rel="stylesheet" href="/public/style.css" />
     <title>Milton Rosa Resume</title>
@@ -70,6 +73,22 @@
         </nav>
         <div class="overview">
           <div class="container">
+            <script src="/public/three.min.js"></script>
+            <script src="/public/vanta.net.min.js"></script>
+            <script>
+              VANTA.NET({
+                el: ".overview",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.0,
+                minWidth: 200.0,
+                scale: 1.0,
+                scaleMobile: 1.0,
+                color: 0x3c6142,
+                backgroundColor: 0x141414,
+              });
+            </script>
             <h1 class="name">Milton <span id="LN">Rosa</span></h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ab
@@ -146,6 +165,7 @@
       </main>
     </div>
     <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.birds.min.js"></script>
     <script
       type="text/javascript"
       src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"
