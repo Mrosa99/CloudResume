@@ -1,4 +1,8 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
+  position: relative;
   margin: 0;
   color: white;
 }
@@ -7,7 +11,8 @@ div {
   display: block;
 }
 
-.page {}
+.page {
+}
 
 .nav {
   height: 65px;
@@ -29,16 +34,24 @@ div {
   align-items: center;
 }
 
+.bg-primary {
+  background-color: #0e0e0e !important;
+}
+
 .nav-links {
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
-
-.btn {
-  color: white;
-  text-decoration: none;
-  margin: 10px;
+.navbar-dark .navbar-brand {
+  color: #3c6142;
+}
+.navbar-nav {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
 }
 
 .overview {
@@ -52,13 +65,14 @@ div {
   text-align: center;
   background-color: #141414;
 }
-
+#names {
+  color: gree;
+}
 .container {
   margin: 0 auto;
   width: 980px;
   padding-left: 16px;
   padding-right: 16px;
-
 }
 
 .main-content {
@@ -67,7 +81,6 @@ div {
   background-color: #272626;
   position: relative;
   margin-top: calc(100vh + 65px);
-
 }
 
 .about {
@@ -129,6 +142,6 @@ div {
   padding: 100px;
 }
 
-#LN{
-  color : #3C6142;
+#LN {
+  color: #3c6142;
 }
