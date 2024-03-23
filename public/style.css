@@ -43,6 +43,7 @@ div {
   align-items: center;
   justify-content: flex-end;
 }
+
 .navbar-nav {
   display: flex;
   flex-direction: column;
@@ -67,6 +68,7 @@ div {
   padding-left: 16px;
   padding-right: 16px;
 }
+
 .main-content {
   display: inline-block;
   width: 100%;
@@ -217,7 +219,6 @@ img.picture {
 }
 
 .skills-content {
-
   justify-content: center;
 }
 
@@ -226,16 +227,18 @@ img.picture {
   flex-direction: row;
   justify-content: space-evenly;
   width: 100%;
-
 }
 
 ul {
   list-style: none;
+  padding-left: 10px;
 }
 
 .skills-list {
   display: flex;
   font-size: 25px;
+  justify-content: space-between;
+  
 }
 
 
@@ -280,10 +283,19 @@ progress::-moz-progress-bar {
   .skills-container {
     flex-wrap: wrap;
   }
+
+  .skills-list {
+    font-size: 30px;
+    flex-wrap: nowrap;
+    justify-content: start;
+  }
 }
 
 @media screen and (max-width: 991px) {
-  .skills-list{
-font-size: 21px;
+  .skills-list {
+    font-size: 21px;
   }
+}
+.lists-col-one,.lists-col-two{
+  width: 420px;
 }
