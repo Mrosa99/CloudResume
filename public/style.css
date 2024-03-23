@@ -220,3 +220,29 @@ h3 {
 img.picture{
   border-radius: 10px 10px 1px 1px;
 }
+
+.skills-content{
+  justify-content: center;
+  display: flex;
+}
+
+.skills-col-two{
+  padding-top: 68px;
+}
+
+ul{
+  list-style: none;
+}
+
+.skills-list{
+  display: flex;
+  font-size: 23px;
+  padding-right: 5px;
+}
+
+.bar {
+  
+  width: 1%;
+  height: 30px;
+  background-color: green;
+}
