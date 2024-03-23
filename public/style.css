@@ -225,14 +225,13 @@ img.picture {
   justify-content: center;
 }
 
-.skills-container{
+.skills-container {
   display: flex;
-  justify-content: center
-}
-
-.skills-col-three {
+  width: 100%;
   
 }
+
+.skills-col-three {}
 
 ul {
   list-style: none;
@@ -248,11 +247,23 @@ ul {
   display: flex;
 }
 
-.list-col-one {
+.list-col-one {}
 
+.list-col-two {
+  width: 50px;
 }
 
-.list-col-two {}
 .list-col-three {}
+
 .list-col-four {}
 
+#myProgress {
+  width: 100%;
+  background-color: #ddd;
+}
+
+#myBar {
+  width: 1%;
+  height: 30px;
+  background-color: #04AA6D;
+}

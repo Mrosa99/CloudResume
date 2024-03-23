@@ -20,9 +20,9 @@ $("body")
   });
 
 var i = 0;
-var txt = "Hi, I'm Milton";
+var txt = "Hi, I'm Milton"
 var speed = 100;
-console.log(txt);
+
 
 document.addEventListener("DOMContentLoaded", function () {
   typeWriter();
