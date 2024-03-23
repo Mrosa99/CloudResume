@@ -204,7 +204,7 @@ h3 {
     padding-right: 0px;
   }
 
- 
+
 }
 
 
@@ -217,32 +217,42 @@ h3 {
   background-color: #121212;
 }
 
-img.picture{
+img.picture {
   border-radius: 10px 10px 1px 1px;
 }
 
-.skills-content{
+.skills-content {
   justify-content: center;
+}
+
+.skills-container{
   display: flex;
+  justify-content: center
 }
 
-.skills-col-two{
-  padding-top: 68px;
+.skills-col-three {
+  
 }
 
-ul{
+ul {
   list-style: none;
 }
 
-.skills-list{
+.skills-list {
   display: flex;
   font-size: 23px;
   padding-right: 5px;
 }
 
-.bar {
-  
-  width: 1%;
-  height: 30px;
-  background-color: green;
+.lists {
+  display: flex;
 }
+
+.list-col-one {
+
+}
+
+.list-col-two {}
+.list-col-three {}
+.list-col-four {}
+
