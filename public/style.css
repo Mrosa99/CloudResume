@@ -107,9 +107,6 @@ div {
   position: relative;
 }
 
-.skills-content {
-  padding: 100px;
-}
 
 .certifications {
   padding: 50px 0;
@@ -180,7 +177,9 @@ div {
   font-size: 30px;
 }
 
-#school {
+#school,
+#cloud,
+#AWS {
   color: #3c6142;
 }
 
@@ -222,16 +221,18 @@ img.picture {
 }
 
 .skills-content {
+
   justify-content: center;
 }
 
 .skills-container {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   width: 100%;
-  
-}
 
-.skills-col-three {}
+
+}
 
 ul {
   list-style: none;
@@ -241,29 +242,59 @@ ul {
   display: flex;
   font-size: 23px;
   padding-right: 5px;
+
 }
 
-.lists {
+
+.list-col-two,
+.list-col-four {
+  font-size: 25px;
+}
+
+
+.skill-list {
+  font-size: 25px;
+}
+
+h3 {
+  color: #3c6142;
+}
+
+.bars {
   display: flex;
+  flex-direction: column;
 }
 
-.list-col-one {}
-
-.list-col-two {
-  width: 50px;
+progress {
+  border: 0;
+  height: 20px;
+  border-radius: 20px;
 }
 
-.list-col-three {}
+progress::-webkit-progress-bar {
+  border: 0;
+  height: 20px;
+  border-radius: 20px;
+  background-color: #333333;
 
-.list-col-four {}
-
-#myProgress {
-  width: 100%;
-  background-color: #ddd;
 }
 
-#myBar {
-  width: 1%;
-  height: 30px;
-  background-color: #04AA6D;
+progress::-webkit-progress-value {
+  border: 0;
+  height: 20px;
+  border-radius: 20px;
+  background-color: #3c6142;
+}
+
+progress::-moz-progress-bar {
+  border: 0;
+  height: 20px;
+  border-radius: 20px;
+  background-color: #2b2b2b;
+}
+
+@media screen and (max-width: 768px) {
+  .skills-container {
+    flex-wrap: wrap;
+  }
 }

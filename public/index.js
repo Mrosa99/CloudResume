@@ -23,7 +23,6 @@ var i = 0;
 var txt = "Hi, I'm Milton"
 var speed = 100;
 
-
 document.addEventListener("DOMContentLoaded", function () {
   typeWriter();
 });
