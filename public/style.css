@@ -43,9 +43,7 @@ div {
   align-items: center;
   justify-content: flex-end;
 }
-.navbar-dark .navbar-brand {
-  color: #3c6142;
-}
+
 .navbar-nav {
   display: flex;
   flex-direction: column;
@@ -64,9 +62,7 @@ div {
   justify-content: center;
   background-color: #141414;
 }
-#names {
-  color: gree;
-}
+
 .container {
   margin: 0 auto;
   width: 980px;
@@ -141,12 +137,7 @@ div {
   padding: 100px;
 }
 
-#LN {
-  color: #ffffff;
-  font-size: 80px;
-}
-
-h1 {
+#name-typewriter {
   font-size: 80px;
 }
 
