@@ -1,18 +1,19 @@
 html {
   scroll-behavior: smooth;
 }
+
 body {
+  font-family: "Encode Sans Expanded", serif;
   position: relative;
   margin: 0;
-  color: white;
+  color: #ffffff;
 }
 
 div {
   display: block;
 }
 
-.page {
-}
+.page {}
 
 .nav {
   height: 65px;
@@ -43,9 +44,7 @@ div {
   align-items: center;
   justify-content: flex-end;
 }
-.navbar-dark .navbar-brand {
-  color: #3c6142;
-}
+
 .navbar-nav {
   display: flex;
   flex-direction: column;
@@ -62,12 +61,9 @@ div {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
   background-color: #141414;
 }
-#names {
-  color: gree;
-}
+
 .container {
   margin: 0 auto;
   width: 980px;
@@ -97,7 +93,11 @@ div {
 }
 
 .intro {
-  padding: 100px;
+  padding-right: 50px;
+}
+
+.picture-frame {
+  padding-left: 50px;
 }
 
 .skills {
@@ -142,6 +142,81 @@ div {
   padding: 100px;
 }
 
-#LN {
+#name-typewriter {
+  font-size: 80px;
+}
+
+.input-cursor {
+  display: inline-block;
+  width: 6px;
+  height: 66px;
+  background-color: white;
+  margin-left: 8px;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  40% {
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.input-cursor {
+  animation: blink 0.6s linear infinite alternate;
+}
+
+#slogan {
+  font-size: 30px;
+}
+
+#school {
   color: #3c6142;
+}
+
+h3 {
+  font-size: 50px;
+}
+
+#aboutme-content {
+  font-size: 23px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .intro {
+    padding-right: 0px;
+  }
+
+ 
+}
+
+
+.contact-links {
+  border-radius: 1px 1px 10px 10px;
+  display: flex;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  background-color: #121212;
+}
+
+img.picture{
+  border-radius: 10px 10px 1px 1px;
 }

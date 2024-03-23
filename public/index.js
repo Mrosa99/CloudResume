@@ -18,3 +18,20 @@ $("body")
   .scrollspy({
     offset: 300,
   });
+
+var i = 0;
+var txt = "Hi, I'm Milton";
+var speed = 100;
+console.log(txt);
+
+document.addEventListener("DOMContentLoaded", function () {
+  typeWriter();
+});
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("name-typewriter").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
