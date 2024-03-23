@@ -13,7 +13,6 @@ div {
   display: block;
 }
 
-.page {}
 
 .nav {
   height: 65px;
@@ -44,7 +43,6 @@ div {
   align-items: center;
   justify-content: flex-end;
 }
-
 .navbar-nav {
   display: flex;
   flex-direction: column;
@@ -56,7 +54,7 @@ div {
 .overview {
   height: 100vh;
   position: fixed;
-  width: 100%;
+  width: 100vw;
   padding-top: 65px;
   display: flex;
   align-items: center;
@@ -66,11 +64,9 @@ div {
 
 .container {
   margin: 0 auto;
-  width: 980px;
   padding-left: 16px;
   padding-right: 16px;
 }
-
 .main-content {
   display: inline-block;
   width: 100%;
@@ -228,9 +224,8 @@ img.picture {
 .skills-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   width: 100%;
-
 
 }
 
@@ -240,21 +235,9 @@ ul {
 
 .skills-list {
   display: flex;
-  font-size: 23px;
-  padding-right: 5px;
-
-}
-
-
-.list-col-two,
-.list-col-four {
   font-size: 25px;
 }
 
-
-.skill-list {
-  font-size: 25px;
-}
 
 h3 {
   color: #3c6142;
@@ -296,5 +279,11 @@ progress::-moz-progress-bar {
 @media screen and (max-width: 768px) {
   .skills-container {
     flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .skills-list{
+font-size: 21px;
   }
 }
