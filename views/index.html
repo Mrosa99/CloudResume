@@ -1,183 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <script type="text/javascript">
-      window.global = window;
-    </script>
-    <script src="/public/jquery-3.7.1.min.js"></script>
-    <link rel="stylesheet" href="/public/style.css" />
-    <title>Milton Rosa Resume</title>
-  </head>
-  <body>
-    <div class="page" id="page-top">
-      <main>
-        <nav
-          class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"
-          id="topnav"
-        >
-          <a class="navbar-brand" href="#page-top">
-            <div id="logo">
-              <img src="/assets/MR-logo.png" alt="MR Logo" style="width:66px; height: 40px;">
-            </div>
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarContent"
-            aria-controls="navbarContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse"
-            data-bs-spy="scroll"
-            id="navbarContent"
-          >
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger active" href="#about-id"
-                  >About</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#skills-id"
-                  >Skills</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#certifications-id"
-                  >Certifications</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#projects-id"
-                  >Projects</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#contact-id"
-                  >Contact</a
-                >
-              </li>
-            </ul>
-          </div>
-        </nav>
-        <div class="overview">
-          <div class="container">
-            <script src="/public/three.min.js"></script>
-            <script src="/public/vanta.net.min.js"></script>
-            <script>
-              VANTA.NET({
-                el: ".overview",
-                mouseControls: true,
-                touchControls: true,
-                gyroControls: false,
-                minHeight: 200.0,
-                minWidth: 200.0,
-                scale: 1.0,
-                scaleMobile: 1.0,
-                color: 0x3c6142,
-                backgroundColor: 0x141414,
-              });
-            </script>
-            <h1 class="sentence" id="sentence">
-              <span class="name" id="name-typewriter"></span>
-              <span class="input-cursor"></span>
-            </h1>
 
-            <p>
-              Everyday, striving for growth in all aspects.
-            </p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <script type="text/javascript">
+    window.global = window;
+  </script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+  <script src="/public/jquery-3.7.1.min.js"></script>
+  <link rel="stylesheet" href="/public/style.css" />
+  <title>Milton Rosa Resume</title>
+</head>
+
+<body>
+  <div class="page" id="page-top">
+    <main>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="topnav">
+        <a class="navbar-brand" href="#page-top">
+          <div id="logo">
+            <img src="/assets/MR-logo.png" alt="MR Logo" style="width:66px; height: 40px;">
           </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
+          aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" data-bs-spy="scroll" id="navbarContent">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger active" href="#about-id">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#skills-id">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#certifications-id">Certifications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#projects-id">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact-id">Contact</a>
+            </li>
+          </ul>
         </div>
-        <div class="main-content">
-          <div class="about" id="about-id">
-            <div class="container">
-              <div class="about-content">
-                <div class="intro">
-                  <h3 class="bio">/ about</h3>
-                  <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Enim unde, voluptate ipsa commodi veniam assumenda nihil
-                    odit deserunt quam molestiae, iste, provident suscipit
-                    aliquid! Facilis at fuga impedit recusandae ad.
-                  </p>
+      </nav>
+      <div class="overview">
+        <div class="container">
+          <script src="/public/three.min.js"></script>
+          <script src="/public/vanta.net.min.js"></script>
+          <script>
+            VANTA.NET({
+              el: ".overview",
+              mouseControls: true,
+              touchControls: true,
+              gyroControls: false,
+              minHeight: 200.0,
+              minWidth: 200.0,
+              scale: 1.0,
+              scaleMobile: 1.0,
+              color: 0x3c6142,
+              backgroundColor: 0x141414,
+            });
+          </script>
+          <h1 class="sentence" id="sentence">
+            <span class="name" id="name-typewriter"></span>
+            <span class="input-cursor"></span>
+          </h1>
+
+          <p id="slogan">
+            Everyday, striving for growth in all aspects.
+          </p>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="about" id="about-id">
+          <div class="container flex-container">
+            <div class="about-content">
+              <div class="intro">
+                <h3 class="bio">/about me</h3>
+                <p id="aboutme-content">
+                  I'm a computer science student at <span id="school">Clayton State University</span>, focusing in
+                  cloud computing. 
+                  <br><br>
+                  My focus
+                  is on mastering the principles and applications of cloud technologies. I'm known for my dedication to
+                  learning and problem-solving skills, and I'm constantly seeking opportunities to expand my knowledge
+                  in this dynamic field.</p>
+              </div>
+              <div>
+                <div class="flex-container">
+                  <div>
+                    <img class="picture" src="/assets/holder.jpeg" alt="Chucky">
+                  </div>
+                  <div class="contact-links"> Hi</div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="skills" id="skills-id">
-            <div class="container">
-              <div class="skills-content">
-                <h3>Skills</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
-                  ea alias, quaerat perferendis pariatur dicta voluptatibus
-                  maiores delectus debitis impedit, fugiat saepe minima dolore
-                  sed accusantium assumenda, nisi quo provident.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="certifications" id="certifications-id">
-            <div class="container">
-              <div class="certifications-content">
-                <h3>Certifications</h3>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Eveniet numquam temporibus molestias aliquam suscipit magnam
-                  recusandae natus maiores veniam quidem excepturi nisi at quo,
-                  dignissimos accusantium! Accusantium distinctio reiciendis
-                  illum.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="projects" id="projects-id">
-            <div class="container">
-              <div class="projects-content">
-                <h3>Projects</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Praesentium quod natus sint fuga laudantium aliquid aperiam!
-                  Quos, voluptate nesciunt! Ad ex quod neque vel doloremque non
-                  cum dignissimos itaque blanditiis?
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="contact" id="contact-id">
-            <div class="container">
-              <div class="contact-content">
-                <h3>Contact</h3>
-              </div>
+        </div>
+        <div class="skills" id="skills-id">
+          <div class="container">
+            <div class="skills-content">
+              <h3>Skills</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+                ea alias, quaerat perferendis pariatur dicta voluptatibus
+                maiores delectus debitis impedit, fugiat saepe minima dolore
+                sed accusantium assumenda, nisi quo provident.
+              </p>
             </div>
           </div>
         </div>
-      </main>
-    </div>
-    <!--Bootstrap-->
-    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.birds.min.js"></script>
-    <script
-      type="text/javascript"
-      src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-    <script src="/public/index.js"></script>
-  </body>
+        <div class="certifications" id="certifications-id">
+          <div class="container">
+            <div class="certifications-content">
+              <h3>Certifications</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Eveniet numquam temporibus molestias aliquam suscipit magnam
+                recusandae natus maiores veniam quidem excepturi nisi at quo,
+                dignissimos accusantium! Accusantium distinctio reiciendis
+                illum.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="projects" id="projects-id">
+          <div class="container">
+            <div class="projects-content">
+              <h3>Projects</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Praesentium quod natus sint fuga laudantium aliquid aperiam!
+                Quos, voluptate nesciunt! Ad ex quod neque vel doloremque non
+                cum dignissimos itaque blanditiis?
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="contact" id="contact-id">
+          <div class="container">
+            <div class="contact-content">
+              <h3>Contact</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <!--Bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.birds.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="/public/index.js"></script>
+</body>
+
 </html>

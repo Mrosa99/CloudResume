@@ -1,7 +1,9 @@
 html {
   scroll-behavior: smooth;
 }
+
 body {
+  font-family: "Encode Sans Expanded", serif;
   position: relative;
   margin: 0;
   color: #ffffff;
@@ -11,8 +13,7 @@ div {
   display: block;
 }
 
-.page {
-}
+.page {}
 
 .nav {
   height: 65px;
@@ -92,7 +93,11 @@ div {
 }
 
 .intro {
-  padding: 100px;
+  padding-right: 50px;
+}
+
+.picture-frame {
+  padding-left: 50px;
 }
 
 .skills {
@@ -153,12 +158,15 @@ div {
   0% {
     opacity: 1;
   }
+
   40% {
     opacity: 1;
   }
+
   60% {
     opacity: 0;
   }
+
   100% {
     opacity: 0;
   }
@@ -166,4 +174,49 @@ div {
 
 .input-cursor {
   animation: blink 0.6s linear infinite alternate;
+}
+
+#slogan {
+  font-size: 30px;
+}
+
+#school {
+  color: #3c6142;
+}
+
+h3 {
+  font-size: 50px;
+}
+
+#aboutme-content {
+  font-size: 23px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .intro {
+    padding-right: 0px;
+  }
+
+ 
+}
+
+
+.contact-links {
+  border-radius: 1px 1px 10px 10px;
+  display: flex;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  background-color: #121212;
+}
+
+img.picture{
+  border-radius: 10px 10px 1px 1px;
 }
