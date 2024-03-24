@@ -223,14 +223,18 @@ progress::-moz-progress-bar {
   background-color: #2b2b2b;
 }
 
-@media screen and (max-width: 768px) {
+.lists-col-one,
+.lists-col-two{
+  width: 450px;
+}
+@media screen and (max-width: 767px) {
   .skills-container {
     flex-wrap: wrap;
+    justify-content: start;
   }
 
   .skills-list {
     font-size: 10px;
-    flex-wrap: nowrap;
     justify-content: space-between;
   }
 
@@ -242,6 +246,12 @@ progress::-moz-progress-bar {
 @media screen and (max-width: 991px) {
   .skills-list {
     font-size: 21px;
+  }
+}
+
+@media screen and (max-width: 975px) {
+  .skills-list {
+    font-size: 18px;
   }
 }
 
