@@ -3,6 +3,7 @@ html {
 }
 
 body {
+  padding-top: 65px;
   font-family: "Encode Sans Expanded", serif;
   position: relative;
   margin: 0;
@@ -13,36 +14,10 @@ div {
   display: block;
 }
 
-
-.nav {
-  height: 65px;
-  position: fixed;
-  background-color: #121212;
-  z-index: 1;
-}
-
-.nav-container {
-  padding-left: 30px;
-  padding-right: 30px;
-  justify-content: space-between;
-}
-
-.nav,
-.nav-container {
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-
 .bg-primary {
   background-color: #0e0e0e !important;
 }
 
-.nav-links {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
 .navbar-nav {
   display: flex;
   flex-direction: column;
@@ -55,7 +30,6 @@ div {
   height: 100vh;
   position: fixed;
   width: 100vw;
-  padding-top: 65px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -67,16 +41,17 @@ div {
   padding-left: 16px;
   padding-right: 16px;
 }
+
 .main-content {
   display: inline-block;
   width: 100%;
   background-color: #272626;
   position: relative;
-  margin-top: calc(100vh + 65px);
+  margin-top: 100vh;
 }
 
 .about {
-  padding: 50px 0;
+  padding: 150px 0;
   position: relative;
   width: 100%;
   background-color: #2b2b2b;
@@ -92,17 +67,12 @@ div {
   padding-right: 50px;
 }
 
-.picture-frame {
-  padding-left: 50px;
-}
-
 .skills {
   background-color: #272626;
   width: 100%;
   padding: 50px 0;
   position: relative;
 }
-
 
 .certifications {
   padding: 50px 0;
@@ -111,18 +81,10 @@ div {
   background-color: #2b2b2b;
 }
 
-.certifications-content {
-  padding: 100px;
-}
-
 .projects {
   background-color: #272626;
   padding: 50px;
   position: relative;
-}
-
-.projects-content {
-  padding: 100px;
 }
 
 .contact {
@@ -131,11 +93,8 @@ div {
   position: relative;
 }
 
-.contact-content {
-  padding: 100px;
-}
-
 #name-typewriter {
+  position: relative;
   font-size: 80px;
 }
 
@@ -145,6 +104,7 @@ div {
   height: 66px;
   background-color: white;
   margin-left: 8px;
+  animation: blink 0.6s linear infinite alternate;
 }
 
 @keyframes blink {
@@ -165,11 +125,8 @@ div {
   }
 }
 
-.input-cursor {
-  animation: blink 0.6s linear infinite alternate;
-}
-
 #slogan {
+  position: relative;
   font-size: 30px;
 }
 
@@ -187,8 +144,6 @@ h3 {
   font-size: 23px;
 }
 
-
-
 @media screen and (max-width: 768px) {
   .about-content {
     flex-direction: column;
@@ -198,10 +153,7 @@ h3 {
   .intro {
     padding-right: 0px;
   }
-
-
 }
-
 
 .contact-links {
   border-radius: 1px 1px 10px 10px;
@@ -212,12 +164,11 @@ h3 {
   background-color: #121212;
 }
 
-img.picture {
+img#picture {
   border-radius: 10px 10px 1px 1px;
 }
 
 .skills-content {
-
   justify-content: center;
 }
 
@@ -226,32 +177,28 @@ img.picture {
   flex-direction: row;
   justify-content: space-evenly;
   width: 100%;
-
 }
 
 ul {
   list-style: none;
+  padding-left: 10px;
 }
 
 .skills-list {
   display: flex;
   font-size: 25px;
-}
+  justify-content: space-between;
 
+}
 
 h3 {
   color: #3c6142;
 }
 
-.bars {
-  display: flex;
-  flex-direction: column;
-}
-
 progress {
   border: 0;
   height: 20px;
-  border-radius: 20px;
+  border-radius: 20px
 }
 
 progress::-webkit-progress-bar {
@@ -280,10 +227,28 @@ progress::-moz-progress-bar {
   .skills-container {
     flex-wrap: wrap;
   }
+
+  .skills-list {
+    font-size: 10px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  ul {
+    padding-left: 0px;
+  }
 }
 
 @media screen and (max-width: 991px) {
-  .skills-list{
-font-size: 21px;
+  .skills-list {
+    font-size: 21px;
   }
+}
+
+#about-id,
+#skills-id,
+#certifications-id,
+#projects-id,
+#contact-id {
+  scroll-margin-top: 50px;
 }
