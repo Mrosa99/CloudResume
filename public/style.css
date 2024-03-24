@@ -3,12 +3,13 @@ html {
 }
 
 body {
+  padding-top: 65px;
   font-family: "Encode Sans Expanded", serif;
   position: relative;
   margin: 0;
   color: #ffffff;
 }
-
+/*
 div {
   display: block;
 }
