@@ -23,7 +23,6 @@ div {
   flex-direction: column;
   padding-left: 0;
   margin-bottom: 0;
-  list-style: none;
 }
 
 .overview {
@@ -33,7 +32,6 @@ div {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #141414;
 }
 
 .container {
@@ -45,7 +43,6 @@ div {
 .main-content {
   display: inline-block;
   width: 100%;
-  background-color: #272626;
   position: relative;
   margin-top: 100vh;
 }
@@ -164,7 +161,7 @@ h3 {
   background-color: #121212;
 }
 
-img#picture {
+img.picture {
   border-radius: 10px 10px 1px 1px;
 }
 
@@ -262,3 +259,20 @@ progress::-moz-progress-bar {
 #contact-id {
   scroll-margin-top: 50px;
 }
+
+#cert-container{
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+.img-cert{
+  display: flex;
+  flex-direction: column;
+}
+
+a{
+color:rgb(255, 255, 255, .5);
+}
+
+
