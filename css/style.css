@@ -163,6 +163,7 @@ h3 {
 }
 
 img.picture {
+  height: 450px;
   border-radius: 10px 10px 1px 1px;
 }
 
