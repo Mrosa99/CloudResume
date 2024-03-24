@@ -224,6 +224,7 @@ progress::-moz-progress-bar {
 .lists-col-two{
   width: 450px;
 }
+
 @media screen and (max-width: 767px) {
   .skills-container {
     flex-wrap: wrap;
@@ -275,4 +276,15 @@ a{
 color:rgb(255, 255, 255, .5);
 }
 
+@media screen and (max-width: 767px) {
+  #cert-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
+  .img-cert{
+   padding-top: 50px;
+  }
+
+}
