@@ -80,7 +80,8 @@ div {
 
 .projects {
   background-color: #272626;
-  padding: 50px;
+  padding: 50px 0;
+  width: 100%;
   position: relative;
 }
 
@@ -340,4 +341,22 @@ color:rgb(255, 255, 255, .5);
 #contact-id.contact{
   padding: 20px;
 }
+}
+.card-text{
+  padding-bottom: 60px;
+}
+
+img.card-img-top{
+  height: 160px;
+}
+
+.bottom{
+  display: flex;
+  flex-direction: column;
+  position:absolute;
+  bottom: 20px;
+}
+
+#proj-one{
+  width: 100px;
 }
