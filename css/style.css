@@ -164,14 +164,15 @@ h3 {
 }
 
 img.picture {
-  height: 450px;
+  height: 400px;
   border-radius: 10px 10px 1px 1px;
 }
 
-.skills-content {
-  justify-content: center;
+@media screen and (max-width: 767px) {
+  img.picture {
+    height: 320px;
+  }
 }
-
 .skills-container {
   display: flex;
   flex-direction: row;
