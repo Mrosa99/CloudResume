@@ -142,7 +142,7 @@ h3 {
   font-size: 23px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .about-content {
     flex-direction: column;
     justify-content: center;
@@ -189,7 +189,6 @@ ul {
   display: flex;
   font-size: 25px;
   justify-content: space-between;
-
 }
 
 h3 {
@@ -199,7 +198,7 @@ h3 {
 progress {
   border: 0;
   height: 20px;
-  border-radius: 20px
+  border-radius: 20px;
 }
 
 progress::-webkit-progress-bar {
@@ -207,7 +206,6 @@ progress::-webkit-progress-bar {
   height: 20px;
   border-radius: 20px;
   background-color: #333333;
-
 }
 
 progress::-webkit-progress-value {
@@ -225,7 +223,7 @@ progress::-moz-progress-bar {
 }
 
 .lists-col-one,
-.lists-col-two{
+.lists-col-two {
   width: 450px;
 }
 
@@ -265,65 +263,53 @@ progress::-moz-progress-bar {
   scroll-margin-top: 50px;
 }
 
-.cert-proj-container{
-  display: flex;
+.cert-proj-container {
+  flex-wrap: wrap;
   justify-content: center;
+  display: flex;
   justify-content: space-evenly;
+  width: 100%;
 }
 
-.img-cert{
+.img-cert {
   display: flex;
   flex-direction: column;
+  padding-bottom: 25px;
 }
 
-a{
-color:rgb(255, 255, 255, .5);
+a {
+  color: rgb(255, 255, 255, 0.5);
 }
 
-@media screen and (max-width: 767px) {
-  .cert-proj-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .img-cert{
-   padding-top: 50px;
-  }
-  
-  .card{
-    padding-top: 50px;
-  }  
-}
-.card{
+.card {
   color: #3c6142;
   background-color: #272626;
 }
 
-.card-body{
+.card-body {
   background-color: #141414;
 }
-.card-text{
-  color:rgb(255, 255, 255, .5);
+.card-text {
+  color: rgb(255, 255, 255, 0.5);
 }
 
-.btn.btn-primary{
+.btn.btn-primary {
   background-color: #2b2b2b;
 }
 
-#proj-one{
+#proj-one {
   background-color: #080808;
 }
 
-#lang{
+#lang {
   padding-left: 4px;
 }
 
-.contact-content{
+.contact-content {
   height: 300px;
 }
 
-.contacts-container{
+.contacts-container {
   display: flex;
   justify-content: center;
   justify-content: space-evenly;
@@ -331,33 +317,35 @@ color:rgb(255, 255, 255, .5);
   font-size: 20px;
 }
 
-
-
 @media screen and (max-width: 767px) {
-.contacts-container{
-  flex-direction: column;
-  flex-wrap: wrap;
-}
+  .contacts-container {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 
-#contact-id.contact{
-  padding: 20px;
+  #contact-id.contact {
+    padding: 20px;
+  }
 }
-}
-.card-text{
+.card-text {
   padding-bottom: 60px;
 }
 
-img.card-img-top{
+img.card-img-top {
   height: 160px;
 }
 
-.bottom{
+.bottom {
   display: flex;
   flex-direction: column;
-  position:absolute;
+  position: absolute;
   bottom: 20px;
 }
 
-#proj-one{
+#proj-one {
   width: 100px;
+}
+
+#cert-block {
+  height: 350px;
 }
